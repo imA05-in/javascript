@@ -26,7 +26,7 @@ html, body {
 }
 input{
     background-color:#D6C0B3 ;
-    color: #AB886D;
+    color: #312d29;
 }
 .box{
     display: flex;
@@ -35,15 +35,15 @@ input{
 .calculator{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 400px;
+    justify-content: space-evenly;
+    height: 500px;
     width: 400px;
     background-color:#CEAB93;
     align-items: center;
     /* align-self: center; */
     border-radius: 3px;
 }
-.calculator:hover{
+#glow:hover{
     box-shadow: 1px 1px 20px goldenrod;
 }
 
