@@ -15,6 +15,18 @@ form.addEventListener('submit', function(e){
     }
     else{
         const bmi = weight/((height*height)/10000)
-        result.innerHTML = bmi
+        const bmiName = getBmiName(bmi)
+        result.innerHTML = bmi + bmiName
+
     }
 })
+
+function getBmiName(bmi){
+    if(bmi < 18.6){
+        return '  :Underweight';
+    } else if(bmi >= 18.6 && bmi <= 24.9){
+        return '  :Normal range';
+    } else {
+        return '  :Overweight';
+    }
+}
