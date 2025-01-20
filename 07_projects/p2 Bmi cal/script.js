@@ -14,7 +14,7 @@ form.addEventListener('submit', function(e){
         result.innerHTML = "not a valid weight value!"
     }
     else{
-        const bmi = weight/((height*height)/10000)
+        const bmi = (weight/((height*height)/10000)).toFixed(2)
         const bmiName = getBmiName(bmi)
         result.innerHTML = bmi + bmiName
 
